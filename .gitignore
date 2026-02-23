@@ -1,0 +1,39 @@
+# Environment & secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Data (raw API responses - sensitive + large)
+data/audits/*.jsonl
+data/benchmark/benchmark_runs.jsonl
+data/benchmark/benchmark_log.txt
+data/reports/*.pdf
+data/aggregates/*.json
+data/benchmark/*.json
+
+# Keep directory structure
+!data/audits/.gitkeep
+!data/benchmark/.gitkeep
+!data/reports/.gitkeep
+!data/aggregates/.gitkeep
+
+# Test/temp output
+out/
+_*.py
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Poetry build
+dist/
